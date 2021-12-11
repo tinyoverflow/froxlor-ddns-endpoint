@@ -1,0 +1,23 @@
+<?php
+
+/** Prevent direct access to this file */
+if (defined('APPLICATION') === false) {
+	die('Direct access not permitted!');
+}
+
+return [
+	'users' => [
+		'admin' => [
+			'token' => 'my-token',
+			'domains' => [
+				'example.com' => 300
+			]
+		]
+	],
+
+	'froxlor' => [
+		'endpoint' => 'https://froxlor.example.com/api.php',
+		'api_key' => 'your-api-key-here',
+		'api_secret' => 'your-api-secret-here'
+	]
+];
